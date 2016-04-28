@@ -1,0 +1,16 @@
+[
+{
+  "modid": "MysticGems2",
+  "name": "Mystic Gems 2",
+  "description": "This is a mod about making and using magic gemstones from emeralds and dusts",
+  "version": "${version}",
+  "mcversion": "${1.9}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Wolfofthenyght", "BluSunrise"],
+  "credits": "The Forge and FML guys, Darkhax, BluSunrize, and Pahimar, for their help and inspiration",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
