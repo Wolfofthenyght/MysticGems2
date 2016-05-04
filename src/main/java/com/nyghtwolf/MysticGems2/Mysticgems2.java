@@ -23,7 +23,7 @@ public class Mysticgems2 {
     //public Mysticgems2GUIHandler guiHandler = new Mysticgems2GUIHandler();
 
     @SidedProxy(clientSide = "com.nyghtwolf.Mysticgems2.proxy.ClientProxy", serverSide = "com.nyghtwolf.Mysticgems2.proxy.CommonProxy")
-    public static CommonProxy WolfProxy;
+    public static CommonProxy proxy;
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event){
@@ -41,16 +41,18 @@ public class Mysticgems2 {
         ModRecipes.init();
 
         //Renders Init
-        //WolfProxy.registerRenderThings();
+        proxy.preInit(event);
     }
 
     @Mod.EventHandler
-    public void init(FMLInitializationEvent event){
-        //NetworkRegistry.INSTANCE.registerGuiHandler(instance, new Mysticgems2GUIHandler());
+    public void init(FMLInitializationEvent e) {
+        this.proxy.init(e);
     }
 
     @Mod.EventHandler
-    public void postInit(FMLPostInitializationEvent event){
-
+    public void postInit(FMLPostInitializationEvent e) {
+        this.proxy.postInit(e);
     }
+
+
 }

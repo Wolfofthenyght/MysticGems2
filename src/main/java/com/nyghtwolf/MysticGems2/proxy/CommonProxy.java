@@ -1,15 +1,20 @@
 package com.nyghtwolf.MysticGems2.proxy;
 
-import com.nyghtwolf.MysticGems2.Mysticgems2;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-public class CommonProxy{
+public class CommonProxy {
 
-    public void loadRenders(){
-
-    }
-
-    public void registerRenderers(Mysticgems2 MysticGems2){
+    public void preInit(FMLPreInitializationEvent e) {
 
     }
 
+    public void init(FMLInitializationEvent e) {
+
+    }
+
+    public void postInit(FMLPostInitializationEvent e) {
+
+    }
 }
