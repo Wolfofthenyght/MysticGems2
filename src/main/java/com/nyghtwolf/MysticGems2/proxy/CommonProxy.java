@@ -1,17 +1,15 @@
 package com.nyghtwolf.MysticGems2.proxy;
 
+import com.nyghtwolf.MysticGems2.Mysticgems2;
+
 public class CommonProxy{
 
-    public void registerRenderThings(){
+    public void loadRenders(){
 
     }
 
-    public void registerTileTEntitySpecialRenderer(){
+    public void registerRenderers(Mysticgems2 MysticGems2){
 
     }
 
-    //Mystic Core Armor Render
-    public int addArmor(String armor){
-        return 0;
-    }
 }

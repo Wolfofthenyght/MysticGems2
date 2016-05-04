@@ -7,6 +7,7 @@ import com.nyghtwolf.MysticGems2.init.ModTileEntities;
 import com.nyghtwolf.MysticGems2.proxy.CommonProxy;
 import net.minecraftforge.fml.common.Mod;
 import com.nyghtwolf.MysticGems2.reference.Reference;
+import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -21,7 +22,7 @@ public class Mysticgems2 {
     public static int GuiMysticfuser = 1;
     //public Mysticgems2GUIHandler guiHandler = new Mysticgems2GUIHandler();
 
-    //@SidedProxy(clientSide = "com.nyghtwolf.Mysticgems2.proxy.ClientProxy", serverSide = "com.nyghtwolf.Mysticgems2.proxy.CommonProxy")
+    @SidedProxy(clientSide = "com.nyghtwolf.Mysticgems2.proxy.ClientProxy", serverSide = "com.nyghtwolf.Mysticgems2.proxy.CommonProxy")
     public static CommonProxy WolfProxy;
 
     @Mod.EventHandler
