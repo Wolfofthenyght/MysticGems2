@@ -1,6 +1,6 @@
 package com.nyghtwolf.MysticGems2;
 
-import com.nyghtwolf.MysticGems2.init.ModBlocks;
+//import com.nyghtwolf.MysticGems2.init.ModBlocks;
 import com.nyghtwolf.MysticGems2.init.ModItems;
 import com.nyghtwolf.MysticGems2.init.ModRecipes;
 import com.nyghtwolf.MysticGems2.init.ModTileEntities;
@@ -31,16 +31,16 @@ public class Mysticgems2 {
         ModItems.init();
 
         //Block Init
-        ModBlocks.init();
+        //ModBlocks.init();
 
         //Entity Init
-        ModTileEntities.init();
+        //ModTileEntities.init();
 
         //Recipes Init
         ModRecipes.init();
 
         //Renders Init
-        WolfProxy.registerRenderThings();
+        //WolfProxy.registerRenderThings();
     }
 
     @Mod.EventHandler

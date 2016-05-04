@@ -1,6 +1,6 @@
 package com.nyghtwolf.MysticGems2.proxy;
 
-import com.nyghtwolf.MysticGems2.entity.TileEntityMysticInfuser;
+//import com.nyghtwolf.MysticGems2.entity.TileEntityMysticInfuser;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
