@@ -3,6 +3,8 @@ package com.nyghtwolf.MysticGems2.init;
 import com.nyghtwolf.MysticGems2.item.ItemMysticGems2;
 import com.nyghtwolf.MysticGems2.reference.Reference;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 @GameRegistry.ObjectHolder(Reference.MOD_ID)
 
@@ -13,7 +15,7 @@ public class ModItems {
     //public static final ItemMysticGems2 TimelessMysticGem = new com.nyghtwolf.MysticGems2.item.ItemTimelessMysticGem();
     //public static final ItemMysticGems2 MysticCoreGem = new com.nyghtwolf.MysticGems2.item.ItemMysticCoreGem();
 
-    //Define Swords
+    //Define Sword
     //public static final SwordMysticCore SwordMysticCore = new SwordMysticCore();
 
     //Define Lance
@@ -21,8 +23,6 @@ public class ModItems {
 
     //Define Shields
     //public static final ShieldeMysticCore ShieldeMysticCore = new ShieldeMysticCore();
-
-    //Define Mystic Arrows
 
     public static void init()
     {
@@ -34,6 +34,11 @@ public class ModItems {
 
         //Register Mystic Arrows
 
+    }
+
+    @SideOnly(Side.CLIENT)
+    public static void initModels() {
+        EnergizedMysticGem.initModel();
     }
 
 }
