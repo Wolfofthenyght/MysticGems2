@@ -16,5 +16,4 @@ public class ItemEnergizedMysticGem extends ItemMysticGems2{
         this.setCreativeTab(CreativeTabMysticGems2.MysticGems2_Tab);
     }
 
-
 }

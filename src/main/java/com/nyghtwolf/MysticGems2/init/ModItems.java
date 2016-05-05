@@ -28,6 +28,7 @@ public class ModItems {
     {
         //Register Items
         //GameRegistry.makeItemStack(SwordMysticCore, 0, 1, "SwordMysticCore");
+        GameRegistry.registerItem(EnergizedMysticGem, "EnergizedMysticGem");
 
         //Register Armor
 

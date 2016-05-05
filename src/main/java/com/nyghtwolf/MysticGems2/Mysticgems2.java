@@ -22,7 +22,7 @@ public class Mysticgems2 {
     public static int GuiMysticfuser = 1;
     //public Mysticgems2GUIHandler guiHandler = new Mysticgems2GUIHandler();
 
-    @SidedProxy(clientSide = "com.nyghtwolf.Mysticgems2.proxy.ClientProxy", serverSide = "com.nyghtwolf.Mysticgems2.proxy.CommonProxy")
+    @SidedProxy(clientSide = "com.nyghtwolf.MysticGems2.proxy.ClientProxy", serverSide = "com.nyghtwolf.MysticGems2.proxy.CommonProxy")
     public static CommonProxy proxy;
 
     @Mod.EventHandler
@@ -41,17 +41,17 @@ public class Mysticgems2 {
         ModRecipes.init();
 
         //Renders Init
-        proxy.preInit(event);
+        //proxy.preInit(event);
     }
 
     @Mod.EventHandler
-    public void init(FMLInitializationEvent e) {
-        this.proxy.init(e);
+    public void init(FMLInitializationEvent event) {
+        this.proxy.init(event);
     }
 
     @Mod.EventHandler
-    public void postInit(FMLPostInitializationEvent e) {
-        this.proxy.postInit(e);
+    public void postInit(FMLPostInitializationEvent event) {
+        this.proxy.postInit(event);
     }
 
 
